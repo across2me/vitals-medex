@@ -1,0 +1,31 @@
+.faq-section {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 3rem 0;
+
+  h1{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+}
+
+.accordion-item {
+  border: 1px solid var(--primary-color);
+  padding: .5rem;
+  margin: 1.5rem 0;
+  background-color: var(--main-color);
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--secondary-color);
+  padding: 0 1rem;
+}
+
+.accordion-content {
+  padding: 1rem;
+  color: var(--light-text);
+}

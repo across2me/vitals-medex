@@ -1,0 +1,105 @@
+.procedure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 3rem;
+  margin: 3rem 0;
+  background-image: url(../../../assets/IMG/tips-to-help-you.png);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: var(--blend-bg);
+
+  .procedure-title {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      background: var(--clip-bg);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: .5rem;
+
+    .card {
+      flex: 50%;
+      max-width: 450px;
+      height: auto;
+      background-color: var(--blend-bg);
+      border-radius: 8px;
+      box-shadow: 0 0 10px var(--primary-color);
+      padding: 1rem 3rem;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: start;
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px var(--secondary-color);
+      }
+
+      /* img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+      } */
+
+      .card-number {
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        padding: 1rem;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: var(--light-text);
+      }
+
+      p {
+        color: var(--blend-text);
+      }
+
+      a {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        border-color: var(--blend-text);
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: transparent;
+        cursor: pointer;
+        transition: border-color 0.25s;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 480px) {
+  /* Styles for phones */
+}

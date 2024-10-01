@@ -1,0 +1,219 @@
+.benefit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  margin: 3rem;
+
+  .benefit-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      font-size: 1.5rem;
+      /* color: var(--secondary-color); */
+    }
+  }
+
+  .benefit-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 1rem;
+
+    .benefit-icon {
+      flex: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      margin: 3rem;
+
+      .photo-1 {
+        width: 120px;
+        height: 120px;
+        background-image: url(../../../assets/IMG/1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: crimson;
+        border: 3px solid white;
+        border-radius: 8px;
+        position: absolute;
+        top: -40px;
+        right: -40px;
+      }
+
+      .photo-2 {
+        width: 220px;
+        height: 340px;
+        background-color: rgb(15, 191, 164);
+        border: 3px solid white;
+        border-radius: 8px;
+        background-image: url(../../../assets/IMG/Super-Eagle.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .photo-3 {
+        width: 120px;
+        height: 120px;
+        background-color: rgb(220, 20, 137);
+        background-image: url(../../../assets/IMG/3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid white;
+        border-radius: 8px;
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+      }
+    }
+
+    .benefit-txt {
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        h3 {
+          font-size: 1.2rem;
+          color: var(--secondary-color);
+        }
+
+        li {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+@media only screen and (max-width: 480px) {
+  /* Styles for phones */
+
+  .benefit-container {
+    padding: 1rem 0;
+    margin: 2rem;
+
+    .benefit-content {
+      flex-direction: column;
+      margin: 2rem 1rem;
+
+      .benefit-icon {
+        flex-direction: row;
+
+        .photo-1 {
+          width: 80px;
+          height: 80px;
+          top: -40px;
+          right: -40px;
+        }
+
+        .photo-2 {
+          width: 220px;
+          height: 360px;
+        }
+
+        .photo-3 {
+          width: 80px;
+          height: 80px;
+          bottom: -40px;
+          left: -40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for tablets and large phones */
+
+  .benefit-container {
+    padding: 1rem 0;
+    margin: 2rem;
+
+    .benefit-content {
+      flex-direction: column;
+      margin: 2rem 1rem;
+
+      .benefit-icon {
+        flex-direction: row;
+
+        .photo-1 {
+          width: 80px;
+          height: 80px;
+          top: -40px;
+          right: -40px;
+        }
+
+        .photo-2 {
+          width: 220px;
+          height: 360px;
+        }
+
+        .photo-3 {
+          width: 80px;
+          height: 80px;
+          bottom: -40px;
+          left: -40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for landscape tablets and small laptops */
+
+  .benefit-container {
+    padding: 1rem 0;
+    margin: 2rem;
+
+    .benefit-content {
+      flex-direction: column;
+      margin: 2rem 1rem;
+
+      .benefit-icon {
+        flex-direction: row;
+
+        .photo-1 {
+          width: 80px;
+          height: 80px;
+          top: -40px;
+          right: -40px;
+        }
+
+        .photo-2 {
+          width: 220px;
+          height: 360px;
+        }
+
+        .photo-3 {
+          width: 80px;
+          height: 80px;
+          bottom: -40px;
+          left: -40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for laptops and desktops */
+}
+
+@media only screen and (min-width: 1201px) {
+  /* Styles for large desktops */
+}
